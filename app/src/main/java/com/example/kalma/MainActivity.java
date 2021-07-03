@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = listview.getItemAtPosition(position).toString();
                 Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
-                intent.putExtra("fileName",item);
+                intent.putExtra("pdfFileNames",item);
                 startActivity(intent);
             }
         });

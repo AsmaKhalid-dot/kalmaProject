@@ -17,7 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
         //med=MediaPlayer.create(getApplicationContext(),md);
         //med.start();
         pdfView=(PDFView)findViewById(R.id.opener);
-        String getitem=getIntent().getStringExtra("filename");
+        String getitem=getIntent().getStringExtra("pdfFileNames");
         if(getitem.equals("Pehla Kalma"))
         {
             pdfView.fromAsset("1 kalima.pdf").load();
