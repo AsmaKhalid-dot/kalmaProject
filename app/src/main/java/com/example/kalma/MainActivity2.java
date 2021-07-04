@@ -49,11 +49,11 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
 
-    public void play(View view) {
+    public void Play(View view) {
         med.start();
     }
 
-    public void pause(View view) {
+    public void Pause(View view) {
         med.pause();
     }
 }

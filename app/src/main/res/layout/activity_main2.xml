@@ -9,26 +9,47 @@
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/opener"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    <Button
-        android:id="@+id/btnPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:text="Play"
-        android:onClick="play"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="match_parent"
+        android:background="#79D80A"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="25dp"><![CDATA[>
 
-    <Button
-        android:id="@+id/btnPause"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:text="Pause"
-        android:onClick="pause"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
+
+
+
+
+
+
+
+        ]]>
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="16dp"
+            android:background="#D5EA09"
+            android:onClick="Pause"
+            android:text="Pause"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toStartOf="@+id/btnPause"
+            android:onClick="Play"
+            android:text="Play"
+            android:textSize="18sp" />
+    </com.github.barteksc.pdfviewer.PDFView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
